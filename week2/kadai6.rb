@@ -13,6 +13,6 @@ for counter in 0..(number-1)
 end
 puts "-------------名簿---------------"
 学生.each do |key, value|
-  puts "学生番号: #{key} - 名前: #{value}"
+  puts " 学生番号: #{key} - 名前: #{value} "
 end
 puts "--------------------------------"
