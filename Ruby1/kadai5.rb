@@ -4,7 +4,7 @@ number = gets.to_i
 counter = 0
 for counter in 0..(number-1)
   puts "#{counter+1}番目の学生の名前は何ですか?"
-  printf "名前 > "
+  printf "名前 >"
   学生 << gets.chomp
 end
 puts "-------------名簿---------------"
