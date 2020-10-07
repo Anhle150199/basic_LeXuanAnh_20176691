@@ -1,24 +1,26 @@
-class ATM
+
+  accs = [
+    username: "anhle", password: "123", monney: 123456789
+    # {username: "le A", password: "123", monney: 10000000},
+    # {username: "xxx", password: "123", monney: 20000000}
+  ]
+  class ATM
   attr_accessor :username
   attr_accessor :password
   attr_accessor :monney
    monneyTest = 0
-
-  accs = [
-    {username: "anhle", password: "123", monney: 123456789},
-    {username: "le A", password: "123", monney: 10000000},
-    {username: "xxx", password: "123", monney: 20000000}
-  ]
-
+   a = accs[:username]
+   b = accs[:password]
+   c = accs[:monney]
   def checkAcc
-    for i in 0...(accs.length - 1)
-      if @username == @@accs[:username] && @password == @@accs[:password]
-        @@monneyTest = @@accs[:monney]
+    # for i in 0...(accs.length - 1)
+      if @username == @@a && @password == @@b
+        @@monneyTest = @@c
         return true
       else
         return false
       end
-    end
+    # end
   end
 
   def checkMonney
@@ -63,6 +65,8 @@ when 3
   end
 when 2
   puts "2222222222"
+when 1
+  puts "111111111"
 else#fdfggfgfes
-  printf "xxxxxxxxxxx"
+  printf "invalid"
 end
